@@ -1,7 +1,12 @@
 import type { NextConfig } from "next";
 
+const pages = process.env.GITHUB_PAGES === "true";
 const nextConfig: NextConfig = {
-  /* config options here */
+  ...(pages ? {
+    output: "export",
+    basePath: "/CeilingsStudio",
+    trailingSlash: true,
+    images: { unoptimized: true },
+  } : {}),
 };
-
 export default nextConfig;

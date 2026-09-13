@@ -9,3 +9,11 @@ React / Vinext, Tailwind CSS, Framer Motion, Radix UI.
 Фото интерьеров и отзывы — демонстрационные материалы, помеченные на странице. Источники фото доступны в подвале. Перед коммерческим запуском замените их подтверждёнными материалами мастера с правом публикации.
 
 Запуск: `npm run dev`. Сборка: `npm run build`.
+
+## GitHub Pages
+
+Публичный адрес: https://snubmaze.github.io/CeilingsStudio/
+
+Сборка: `npm run build:pages`. Готовые статические файлы находятся в `out/`. Пути к изображениям, стилям и favicon учитывают `/CeilingsStudio/`.
+
+Workflow `.github/workflows/pages.yml` собирает и публикует сайт при push в `main`. В Settings → Pages должен быть выбран источник GitHub Actions. Обычная сборка Sites (`npm run build`) сохранена отдельно.
